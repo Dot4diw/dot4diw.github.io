@@ -11,7 +11,7 @@ The core function of the software is implemented based on [ImageMagick's Magick+
 
 #### This is an impromptu rough little program, the code is badly written, and the functions can only be used as needed.
 < center class = "half">
-<img src="https://raw.githubusercontent.com/Dot4diw/PDF-AND-IMAGE-TOOLS/main/BYCPLUSPLUS/PAIT/SourceFiles/PAIT-Screenshot.jpg" width = "50%" align = left> <img src = "https://raw.githubusercontent.com/Dot4diw/PDF-AND-IMAGE-TOOLS/main/BYCPLUSPLUS/PAIT/SourceFiles/Screenshot1.jpg" width = "50%" align = right>
+<img src="https://raw.githubusercontent.com/Dot4diw/PDF-AND-IMAGE-TOOLS/main/BYCPLUSPLUS/PAIT/SourceFiles/PAIT-Screenshot.jpg" width = "50%"> <img src = "https://raw.githubusercontent.com/Dot4diw/PDF-AND-IMAGE-TOOLS/main/BYCPLUSPLUS/PAIT/SourceFiles/Screenshot1.jpg" width = "50%">
 </center>
 
 ## PDF Convert to Image
