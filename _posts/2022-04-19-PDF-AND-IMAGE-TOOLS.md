@@ -12,7 +12,7 @@ A tool for converting between PDF to image and image formats.
 The core function of the software is implemented based on [ImageMagick's Magick++](https://imagemagick.org/script/magick++.php), and the graphical interface is based on the [MFC framework](https://docs.microsoft.com/en-us/cpp/mfc/framework-mfc?view=msvc-170). Its main function is to achieve high-quality conversion between PDF to image and image formats.
 
 #### This is an impromptu rough little program, the code is badly written, and the functions can only be used as needed.
-<img src="https://github.com/Dot4diw/PDF-AND-IMAGE-TOOLS/blob/main/BYCPLUSPLUS/PAIT/SourceFiles/PAIT-Screenshot.jpg" width="40%"> <img src = "https://github.com/Dot4diw/PDF-AND-IMAGE-TOOLS/blob/main/BYCPLUSPLUS/PAIT/SourceFiles/Screenshot1.jpg" width = "40%">
+<img src="https://github.com/Dot4diw/PDF-AND-IMAGE-TOOLS/blob/main/BYCPLUSPLUS/PAIT/SourceFiles/PAIT-Screenshot.jpg" align=left> <img src = "https://github.com/Dot4diw/PDF-AND-IMAGE-TOOLS/blob/main/BYCPLUSPLUS/PAIT/SourceFiles/Screenshot1.jpg" align=right>
 
 ## PDF Convert to Image
 Input a PDF file, set the output resolution and format, click convert to convert PDF to image.
