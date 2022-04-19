@@ -197,8 +197,9 @@ subheading: "Do one thing and do it well !"
 # Build settings
 # highlighter: none
 markdown: markdown
-#kmarkdown:
-#  input: GFM
+input: GFM
+kmarkdown:
+  input: GFM
 
 plugins:
   - jekyll-feed
