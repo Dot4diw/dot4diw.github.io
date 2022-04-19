@@ -155,9 +155,9 @@ yat:
 
 # Page default value
 # defaults:
-home:
-      heading: "Welcome to Dot4diw Personal Blog!"
-      subheading: "Do one thing and do it well!"
+#home:
+heading: "Welcome to Dot4diw Personal Blog!"
+subheading: "Do one thing and do it well!"
 # banner: "Your image url"
 
 # Banner default settings
