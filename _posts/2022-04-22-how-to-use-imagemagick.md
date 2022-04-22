@@ -2,7 +2,7 @@
 layout: post
 title: How to use the ImageMagick Magick++ API for development
 subtitle: How to configure Magick++ in Visual Studio
-categories: [C++, CODING]
+categories: CODING
 tags: [C++, CODING]
 ---
 
