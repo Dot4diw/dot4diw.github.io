@@ -65,7 +65,7 @@ yat:
 # header_transparent: true
 
 # If you want to change the content width, you can set to another value
- content_width: "1024px"
+content_width: "1024px"
 
 # Google analytics
 googleAnaly:
