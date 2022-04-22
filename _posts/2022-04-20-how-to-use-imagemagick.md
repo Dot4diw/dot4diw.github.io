@@ -29,13 +29,8 @@ First you need to install Visual Studio 2022 or other version. Then open Visual 
 After that, open the project properties and configure it once in the order shown in the figure below.
 
 ![2022-04-22_084422](https://raw.githubusercontent.com/Dot4diw/dot4diw.github.io/main/imagesource/2022-04-22_084422.jpg)
-
-![2022-04-22_084636](https://raw.githubusercontent.com/Dot4diw/dot4diw.github.io/main/imagesource/2022-04-22_084636.jpg)
-
 ![2022-04-22_084735](https://raw.githubusercontent.com/Dot4diw/dot4diw.github.io/main/imagesource/2022-04-22_084735.jpg)
-
 ![2022-04-22_084812](https://raw.githubusercontent.com/Dot4diw/dot4diw.github.io/main/imagesource/2022-04-22_084812.jpg)
-
 ![2022-04-22_084947](https://raw.githubusercontent.com/Dot4diw/dot4diw.github.io/main/imagesource/2022-04-22_084947.jpg)
 
 **Step3. Write a sample program for Magick++ and run it.**
