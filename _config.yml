@@ -28,6 +28,8 @@ title: Dot4diw
 email: dot4diw@gmail.com
 author: Dot4diw
 
+# timezone
+timezone: Asia/Shanghai
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
 # * current year: {currentYear}
