@@ -18,14 +18,14 @@ Use the arrow keys ↑ ↓ ← →, and Home, End, PageUp, PageDown keys to move
 
 | Keyboard Shortcuts     | Actions                             |
 | ---------------------- | ----------------------------------- |
-| CTRL+ ← or ALT+ b      | Move the cursor left by word.       |
-| CTRL+ → or ALT+ f      | Move the cursor right by word.      |
-| CTRL+ Home or ALT+ <   | Move to beginning of file           |
+| CTRL + ← or ALT + b      | Move the cursor left by word.       |
+| CTRL + → or ALT + f      | Move the cursor right by word.      |
+| CTRL + Home or ALT + <   | Move to beginning of file           |
 | CTRL + End or ALT + >  | Move to end of the file.            |
 | CTRL + f or →          | Mover the cursor right by one char. |
 | CTRL + b or  ←         | Mover the cursor left by one char.  |
-| CTRL+ v or PageDown    | Scroll next page.                   |
-| ALT + v or PageUp      | Scroll previous page.               |
+| CTRL + v or PageDown    | Scroll next page.                   |
+| ALT  + v or PageUp      | Scroll previous page.               |
 | CTRL + u 10 CTRL + n/p | Move forward or backward 10 lines.  |
 
 ## Edit the text
