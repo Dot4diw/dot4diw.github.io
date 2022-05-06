@@ -6,8 +6,6 @@ categories: VIM
 tags: [VIM, TOOLS]
 ---
 
-#Vim Basics Operator Cheat Sheet        
-
 ## Introduction
 
 Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. 
@@ -20,7 +18,7 @@ Vim is a highly configurable text editor built to make creating and changing any
 -   powerful search and replace
 -   integrates with many tools
 
- **Tip: ** Run vimtutor in a terminal to learn the first Vim commands.  
+ **Tip:** Run vimtutor in a terminal to learn the first Vim commands.  
 
 
 
