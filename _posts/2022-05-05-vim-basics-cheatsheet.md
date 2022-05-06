@@ -123,3 +123,231 @@ Vim is a highly configurable text editor built to make creating and changing any
 3). `@a` - run macro `a`; 
 
 4). `100@a` - run the macro `a` 100 times.
+
+## My vim configure file 
+```vimscript
+"@My Configure file of vim editor
+"@FileName : vimrc
+"@Dot4diw
+" Use ~/.vim/vimrc if exists
+"if filereadable(expand("~/.vim/vimrc"))
+"    source ~/.vim/vimrc
+"endif
+
+" Resove the E421: Color name or number not recognized: ctermbg=#A0A0A0
+if &term =~ "xterm"
+    "256 color --
+    let &t_Co=256
+    " restore screen after quitting
+    "set t_ti=ESC7ESC[rESC[?47h t_te=ESC[?47lESC8
+    " if has("terminfo")
+    "     let &t_Sf="\ESC[3%p1%dm"
+    "     let &t_Sb="\ESC[4%p1%dm"
+    " else
+    "     let &t_Sf="\ESC[3%dm"
+    "     let &t_Sb="\ESC[4%dm"
+    " endif
+endif
+
+let mapleader=" "
+
+set nocompatible
+set mouse=""
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+filetype plugin indent on
+
+" Adjust the terminal color
+let &t_ut=''
+
+set encoding=utf-8
+set number
+set relativenumber
+set cursorline
+
+" set spell
+
+set ruler
+set showmode
+set showcmd
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+" set list
+
+set scrolloff=5
+set laststatus=2
+set autochdir
+
+"set wrap
+set nowrap
+set backspace=indent,eol,start
+
+set wildmenu
+set hlsearch
+set incsearch
+exec "nohlsearch"
+set ignorecase
+set smartcase
+set lazyredraw
+set ttyfast
+
+"Setting the theme for vim
+"colorscheme murphy
+"colorscheme pablo
+"colorscheme ron
+colorscheme slate
+"colorscheme snazzy
+"let g:SnazzyTransparent = 1
+"Rmap the key.
+
+hi CursorLine term=bold cterm=bold ctermbg=235
+
+map s <nop>
+map S :w<CR>
+map Q :q<CR>
+map R :source $MYVIMRC<CR>
+
+map sr :set splitright<CR>:vsplit<CR>
+map sl :set nosplitright<CR>:vsplit<CR>
+map su :set nosplitbelow<CR>:split<CR>
+map sd :set splitbelow<CR>:split<CR>
+map sv <C-w>t<C-w>H
+map sh <C-w>t<C-w>K
+
+"map <up> :res +5<CR>
+"map <down> :res -5<CR>
+"map <left> :vertival resize-5<CR>
+"map <right> :vertival resize+5<CR>
+
+
+map <LEADER>l <C-w>l
+map <LEADER>k <C-w>k
+map <LEADER>h <C-w>h
+map <LEADER>j <C-w>j
+map <LEADER>n :bn<CR>
+map <LEADER>p :bp<CR>
+
+map tu :tabe<CR>
+map tn :-tabnext<CR>
+map tp :+tabnext<CR>
+
+noremap J 5j
+noremap K 5k
+noremap = nzz
+noremap - Nzz
+noremap <LEADER><CR> :nohlsearch<CR>
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+" Recoder the position of the last out.
+au BufReadPost * if line("'\"") > 0 | if line("'\"") <= line("$") | exe("norm '\"") | else |exe "norm $"| endif | endif
+
+"<<<<<NerdTree Config
+map tt :NERDTreeToggle<CR>
+
+">>>>>NerdTree Config
+
+"<<<<<YouCompleteME Config
+    let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
+    let g:ycm_key_invoke_completion = ''
+    let g:ycm_min_num_identifier_candidate_chars = 2
+    let g:ycm_goto_buffer_command = 'horizontal-split'
+    let g:ycm_seed_identifiers_with_syntax=1
+    map <F2> :YcmCompleter GoTo<CR>
+    let g:ycm_error_symbol = '>>'
+    let g:ycm_warning_symbol = '>*'
+">>>>>YouCompleteME Config
+
+
+"<<<<<ale config
+let b:ale_linters = ['pylint']
+let b:ale_fixers = ['autopep8', 'yapf']
+">>>>>ale config
+
+"<<<<<Goyo
+map <LEADER>gy :Goyo<CR>
+">>>>>Goyo
+
+"<<<<<indentLine config
+    let g:indentLine_char='¦'
+    let g:indentLine_enabled = 1
+    let g:indentLine_color_term = 239
+    " let g:indentLine_bgcolor_term = 202
+    " let g:indentLine_bgcolor_gui = '#FF5F00'
+    " let g:indentLine_setConceal = 0
+    " let g:indentLine_setColors = 0
+    " let g:indentLine_defaultGroup = 'SpecialKey'
+    
+    " none X terminal
+    let g:indentLine_color_tty_light = 7 " (default: 4)
+    let g:indentLine_color_dark = 1 " (default: 2)
+    " Background (Vim, GVim)
+
+">>>>>indentLine config
+
+
+"<<<<<vim-autoformat config
+    " Push the F6 button to auto format.
+    nnoremap <F6> :Autoformat<CR> " Push the F6 button to auto format.
+    let g:autoformat_autoindent = 0
+    let g:autoformat_retab = 0
+    let g:autoformat_remove_triling_soace = 0
+">>>>>vim-autoformat config
+"<<<<<vim-org-mode config
+    let g:org_agenda_files=['~/.vim/org/index.org']
+">>>>>vim-org-mode congig
+
+"<<<<<vim-rainbow config
+    let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+    let g:rainbow_conf = {
+        \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+        \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+        \   'operators': '_,_',
+        \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+        \   'separately': {
+        \       '*': {},
+        \       'tex': {
+        \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+        \       },
+        \       'lisp': {
+        \           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+        \       },
+        \       'vim': {
+        \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+        \       },
+        \       'html': {
+        \           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+        \       },
+        \       'css': 0,
+        \   }
+        \}
+">>>>>vim-rainbow config
+
+"Plug Install List
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'connorholyday/vim-snazzy'
+Plug 'preservim/nerdtree'
+" Plug 'ycm-core/YouCompleteMe'
+Plug 'dense-analysis/ale'
+Plug 'junegunn/goyo.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'Chiel92/vim-autoformat'
+Plug 'luochen1990/rainbow'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
+Plug 'mattn/calendar-vim'
+Plug 'majutsushi/tagbar'
+
+call plug#end()
+```
