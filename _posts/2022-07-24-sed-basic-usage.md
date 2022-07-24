@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Some Basic Usage of Sed
-subtitle: sed - A tool for line-oriented text processing
+subtitle: Sed - A tool for line-oriented text processing
 categories: LINUX
 tags: [SED, LINUX]
 ---
