@@ -239,7 +239,5 @@ echo "This is a testing of sed!" | sed 's/\([a-z|A-Z]\)\([a-zA-Z0-9]*\)/\u\1\2/g
 This Is A Testing Of Sed!
 ```
 
-Ref:  [1]. [Linuxhint](https://linuxhint.com/50_sed_command_examples/#s1)
-      ![image](https://linuxhint.com/wp-content/uploads/2019/11/Logo-final.png)
-     
+Ref:  [1]. [Linuxhint](https://linuxhint.com/50_sed_command_examples/#s1) <br>
       [2]. [The Basics of Using the Sed Stream Editor to Manipulate Text in Linux](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
